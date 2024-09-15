@@ -12,7 +12,7 @@ import org.hibernate.annotations.Generated;
 import java.util.List;
 
 @Entity
-public class Infosys {
+public class Accenture {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)  // This will increment number automatically
@@ -32,7 +32,7 @@ public class Infosys {
 	public int getEmp_id() {
 		return emp_id;
 	}
-	public Infosys(String emp_name, String emp_department) {
+	public Accenture(String emp_name, String emp_department) {
 		super();
 		this.emp_name = emp_name;
 		this.emp_department = emp_department;
@@ -40,7 +40,7 @@ public class Infosys {
 	public void setEmp_id(int emp_id) {
 		this.emp_id = emp_id;
 	}
-	public Infosys() {
+	public Accenture() {
 		super();
 	}
 	public String getEmp_name() {
