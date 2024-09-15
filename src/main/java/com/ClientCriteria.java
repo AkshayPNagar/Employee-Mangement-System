@@ -18,7 +18,7 @@ import java.util.List;
 			
 			Configuration cfg = new Configuration();
 			cfg.configure();
-			cfg.addAnnotatedClass(Infosys.class);
+			cfg.addAnnotatedClass(Accenture.class);
 			cfg.addAnnotatedClass(Emp_projects.class);	
 			
 			SessionFactory sf = cfg.buildSessionFactory();
@@ -27,15 +27,15 @@ import java.util.List;
 			
 			Transaction tt = session.beginTransaction();
 			
-			Infosys info = new Infosys("Sushant","Tester");
+			Accenture info = new Accenture("Sushant","Tester");
 			
 			
-			Criteria criteria = session.createCriteria(Infosys.class);
+			Criteria criteria = session.createCriteria(Accenture.class);
 			
 			
-			List<Infosys> details = criteria.list();
+			List<Accenture> details = criteria.list();
 			
-			for(Infosys s : details)
+			for(Accenture s : details)
 			{
 				System.out.println(s);
 			}
