@@ -1,4 +1,4 @@
-package Infosys.src.main.java.com;
+package Accenture.src.main.java.com;
 
 import org.hibernate.cfg.Configuration;
 import org.hibernate.SessionFactory;
@@ -16,7 +16,7 @@ public class ClientInsert {
 		
 		Configuration cfg = new Configuration();
 		cfg.configure();
-		cfg.addAnnotatedClass(Infosys.class);
+		cfg.addAnnotatedClass(Accenture.class);
 		
 		SessionFactory sf = cfg.buildSessionFactory();
 		
@@ -24,7 +24,7 @@ public class ClientInsert {
 		
 		Transaction tt = session.beginTransaction();
 		
-		Infosys info = new Infosys("Kirshna","Developer");
+		Accenture info = new Accenture("Kirshna","Developer");
 		
 		session.save(info);
 		tt.commit();
