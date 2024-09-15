@@ -1,4 +1,4 @@
-package Infosys.src.main.java.com;
+package Accenture.src.main.java.com;
 
 import org.hibernate.cfg.Configuration;
 import org.hibernate.SessionFactory;
